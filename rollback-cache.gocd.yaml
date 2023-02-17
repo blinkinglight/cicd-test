@@ -1,4 +1,10 @@
 format_version: 10
+environments:
+  example:
+    environment_variables:
+      VERS: 1.0.0
+    pipelines:
+      - rollback-cache
 pipelines:
   rollback-cache:
     group: defaultGroup
